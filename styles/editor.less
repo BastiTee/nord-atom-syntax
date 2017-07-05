@@ -2,21 +2,13 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Editor                                              +
 project    nord-atom-syntax                                    +
-version    0.3.0                                               +
 repository https://github.com/arcticicestudio/nord-atom-syntax +
 author     Arctic Ice Studio                                   +
 email      development@arcticicestudio.com                     +
-copyright  Copyright (C) 2016                                  +
+copyright  Copyright (C) 2017                                  +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-[Index]
-  > Elements
-  > find-and-replace
-  > Gutter
 */
-atom-text-editor,
-atom-text-editor::shadow,
-:host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -24,7 +16,7 @@ atom-text-editor::shadow,
     + Elements +
     +----------+*/
   .bracket-matcher .region {
-    border: 1px solid @syntax-bracket-matcher-color;;
+    border: 1px solid @syntax-bracket-matcher-color;
     box-sizing: border-box;
   }
 
@@ -33,7 +25,7 @@ atom-text-editor::shadow,
   }
 
   .indent-guide {
-    color: @syntax-indent-guide-color;
+    box-shadow: inset 1px 0 @syntax-indent-guide-color;
   }
 
   .invisible {
@@ -135,7 +127,7 @@ atom-text-editor::shadow,
       }
 
       .icon-right {
-        opacity: 1.0;
+        opacity: 1;
         color: @syntax-gutter-text-color;
         transition: all @syntax-transition-time ease;
       }
@@ -157,7 +149,7 @@ atom-text-editor::shadow,
       transition: all @syntax-transition-time ease;
 
       &:hover {
-        opacity: 1.0;
+        opacity: 1;
       }
     }
   }

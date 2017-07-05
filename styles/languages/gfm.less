@@ -2,11 +2,10 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Language GitHub Flavored Markdown                   +
 project    nord-atom-syntax                                    +
-version    0.3.0                                               +
 repository https://github.com/arcticicestudio/nord-atom-syntax +
 author     Arctic Ice Studio                                   +
 email      development@arcticicestudio.com                     +
-copyright  Copyright (C) 2016                                  +
+copyright  Copyright (C) 2017                                  +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [Language Packages]
@@ -16,23 +15,24 @@ copyright  Copyright (C) 2016                                  +
 GitHub
   (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 */
-.source.gfm {
-  .comment.hr {
-    color: @syntax-color-gfm-hr;
+.syntax--source.syntax--gfm {
+  .syntax--comment.syntax--hr {
+    color: @syntax-color-markup-hr;
   }
-  .link .entity {
-    color: @syntax-color-gfm-link;
+
+  .syntax--link .syntax--entity {
+    color: @syntax-color-markup-link;
   }
-  
-  .punctuation.definition {
-    color: @syntax-color-gfm-punctuation;
+
+  .syntax--punctuation.syntax--definition {
+    color: @syntax-color-markup-punctuation;
   }
-  
-  .variable.unordered.list {
-    color: @syntax-color-gfm-punctuation;
+
+  .syntax--variable.syntax--unordered.syntax--list {
+    color: @syntax-color-markup-punctuation;
   }
-  
-  .support {
+
+  .syntax--support {
     color: @syntax-color-markup-code;
   }
 }
